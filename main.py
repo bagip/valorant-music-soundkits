@@ -30,7 +30,6 @@ while True:
     teamace = pg.locateOnScreen("C:/blagoje/opencv project/res/TeamAce.png",grayscale = True, confidence = 0.65)
     won_round()
     lost_round()
-    team_ace()
 
 
 
