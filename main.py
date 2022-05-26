@@ -8,7 +8,7 @@ def won_round():
     if won == None:
         print(won)
     else:
-        playsound("C:/blagoje/opencv project/res/Bruh.wav")
+        playsound("C:/blagoje/opencv project/res/gluh.wav")
 
 def lost_round():
     if lost == None:
