@@ -1,3 +1,3 @@
-# valorant-round-end-sounds-v1
+# Valorant music soundkits V1
 
 Version 1 of valorant music soundkits
