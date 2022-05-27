@@ -22,8 +22,8 @@ def lost_round():
 
 
 while True:
-    won = pg.locateOnScreen(path + "/res/won3.png",grayscale = True, confidence = 0.65)
-    lost = pg.locateOnScreen(path +"/res/lost2.png",grayscale = True, confidence = 0.65)
+    won = pg.locateOnScreen(path + "/res/won3.png",grayscale = True, confidence = 0.65, region=(600,120,300,200))
+    lost = pg.locateOnScreen(path +"/res/lost2.png",grayscale = True, confidence = 0.65, region=(600,120,300,200))
     won_round()
     lost_round()
 
