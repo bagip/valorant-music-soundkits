@@ -24,8 +24,8 @@ def lost_round():
 
 if __name__ == "__main__":
     while True:
-        won = pg.locateOnScreen(won_image,grayscale = True, confidence = 0.65, region=(700,155,300,200))
-        lost = pg.locateOnScreen(lost_image,grayscale = True, confidence = 0.65, region=(700,155,300,200))
+        won = pg.locateOnScreen(won_image,grayscale = True, confidence = 0.65, region=(800,120,300,200))
+        lost = pg.locateOnScreen(lost_image,grayscale = True, confidence = 0.65, region=(800,120,300,200))
         won_round()
         lost_round()
     
