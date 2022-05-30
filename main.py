@@ -5,20 +5,25 @@ import os
 import pyautogui as pg
 from playsound import playsound
 import time
+import sys
 
-path = os.path.dirname(__file__)
+if getattr(sys, 'frozen', False):
+    path = os.path.dirname(sys.executable)
+elif __file__:
+    path = os.path.dirname(__file__)
+
 won_image = path + "/res/won2.png"
 lost_image = path + "/res/lost2.png"
 won_sound = ''
 lost_sound = ''
 
 if not won_sound:
-    with open(path + "/res/sounds.txt") as won_text:
+    with open(path + "/res/sounds.cfg") as won_text:
         lines = won_text.read().splitlines()
         won_sound = lines[0]
 
 if not lost_sound:
-    with open(path + "/res/sounds.txt") as lost_text:
+    with open(path + "/res/sounds.cfg") as lost_text:
         lines = lost_text.read().splitlines()
         lost_sound = lines[1]
 
