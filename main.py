@@ -25,7 +25,7 @@ if not lost_sound:
 def won_round():
     if won == None:
         print(won)
-        time.sleep(0.1)
+        time.sleep(0.05)
     else:
         playsound(path +"/res/" + won_sound)
 
@@ -33,7 +33,7 @@ def won_round():
 def lost_round():
     if lost == None:
         print(lost)
-        time.sleep(0.1)
+        time.sleep(0.05)
     else:
         playsound(path +"/res/" + lost_sound)
 
