@@ -2,7 +2,7 @@
 
 -Uses less processing power
 
--Now you can choose your own files to play in sounds.cfg file
+-Now you can choose your own files to play in sounds.cfg 
 
 
 # Valorant music soundkits V1.1
