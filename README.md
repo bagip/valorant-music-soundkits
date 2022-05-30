@@ -12,4 +12,4 @@ Changelog:
 
 -Uses less processing power
 
--Now you can choose your own files to play in sounds.txt file
+-Now you can choose your own files to play in sounds.cfg file
