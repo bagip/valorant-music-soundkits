@@ -1,3 +1,7 @@
+# Valorant music soundkits V1.3
+
+-Added DaBaby "LETS GO" sound when Breach ults
+
 # Valorant music soundkits V1.2
 
 -Uses less processing power
