@@ -14,6 +14,8 @@ elif __file__:
 
 won_image = path + "/res/won2.png"
 lost_image = path + "/res/lost2.png"
+breach_image = path + "/res/breach.png"
+breach_ult_ready = path + "/res/breach_yellow.png"
 won_sound = ''
 lost_sound = ''
 
@@ -42,6 +44,21 @@ def lost_round():
     else:
         playsound(path +"/res/" + lost_sound)
 
+
+def breach_ult():
+    if breach_yellow == None:
+        print(breach_yellow)
+        time.sleep(0.05)
+    else:
+        print("Ide gas")
+        breach = pg.locateOnScreen(breach_image, confidence = 0.65)
+        if breach == None:
+            print(breach)
+            time.sleep(0.05)
+        else:
+            playsound(path + "/res/" + won_sound)
+            time.sleep(10)
+
 won_text.close()
 lost_text.close()
 
@@ -49,8 +66,10 @@ if __name__ == "__main__":
     while True:
         won = pg.locateOnScreen(won_image,grayscale = True, confidence = 0.65, region=(700,155,300,200))
         lost = pg.locateOnScreen(lost_image,grayscale = True, confidence = 0.65, region=(700,155,300,200))
+        breach_yellow = pg.locateOnScreen(breach_ult_ready, confidence = 0.9, region=(370,67,300,51))
         won_round()
         lost_round()
+        breach_ult()
     
 
 
