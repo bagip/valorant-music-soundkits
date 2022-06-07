@@ -20,6 +20,8 @@ won_sound = ''
 lost_sound = ''
 letsgo_sound = ''
 
+print("Valorant music soundkits V1.3 by Buggy")
+
 if not letsgo_sound:
     with open(path + "/res/sounds.cfg") as letsgo_text:
         lines = letsgo_text.read().splitlines()
@@ -37,7 +39,6 @@ if not lost_sound:
 
 def won_round():
     if won == None:
-        print(won)
         time.sleep(0.05)
     else:
         playsound(path +"/res/" + won_sound)
@@ -45,7 +46,6 @@ def won_round():
  
 def lost_round():
     if lost == None:
-        print(lost)
         time.sleep(0.05)
     else:
         playsound(path +"/res/" + lost_sound)
@@ -53,19 +53,19 @@ def lost_round():
 
 def breach_ult():
     if breach_yellow == None:
-        print(breach_yellow)
         time.sleep(0.05)
     else:
         print("Ide gas")
         breach = pg.locateOnScreen(breach_image, confidence = 0.6,region=(370,67,920,51))
         if breach == None:
-            print(breach)
+            time.sleep(0.05)
         else:
             playsound(path + "/res/" + letsgo_sound)
             time.sleep(10)
 
 won_text.close()
 lost_text.close()
+letsgo_text.close()
 
 if __name__ == "__main__":
     while True:
