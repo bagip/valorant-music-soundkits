@@ -56,7 +56,7 @@ def breach_ult():
         time.sleep(0.05)
     else:
         print("Ide gas")
-        breach = pg.locateOnScreen(breach_image, confidence = 0.6,region=(370,67,920,51))
+        breach = pg.locateOnScreen(breach_image, confidence = 0.65,region=(370,67,920,51))
         if breach == None:
             time.sleep(0.05)
         else:
